@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <title>Edit Profile</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            color: white;
+            padding-top: 10px;
+        }
+
+        h1,
+        h4,
+        h6,
+        p {
+            font-family: 'Raleway', sans-serif;
+            color: white;
+        }
+
+        h4,
+        h6 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .custom-control-input {
+            background-color: black;
+        }
+
+        button {
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <img src="netflix-new-logo.png" alt=" netflix logo" width="100" height="70" />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="row d-flex align-items-center flex-column">
+                    <div class="col-6">
+                        <div class="col-12">
+                            <header>
+                                <h1>EDIT PROFILE</h1>
+                            </header>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="pd.png" alt="profile pic" width="100" />
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="ml">
+                                        <input type="text" id="name" value="student" />
+                                        <h4>Languages:</h4>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                English
+                                            </button>
+                                            <button type="button"
+                                                class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">French</a>
+                                                <a class="dropdown-item" href="#">Italian</a>
+                                                <a class="dropdown-item" href="#">Arabic</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row d-flex flex-column">
+                                    <h4>Maturity Settings:</h4>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary">
+                                            All Maturity Ratings
+                                        </button>
+                                        <button type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">+7</a>
+                                            <a class="dropdown-item" href="#">+16</a>
+                                            <a class="dropdown-item" href="#">+18</a>
+                                        </div>
+                                    </div>
+                                    <h6>
+                                        Show titles for <strong> maturity ratings </strong> for
+                                        this Profile
+                                    </h6>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                        Edit
+                                    </button>
+                                </div>
+                                <hr>
+                                <div class="row d-flex flex-column">
+                                    <h4>Auto Play Controls</h4>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                         <p>Autoplay next episode in a series on all devices.</p> 
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                         <p>Autoplay previews while browsing on all devices.</p> 
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="row d-flex flex-column"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <input class="btn btn-outline-secondary" type="submit" value="SAVE">
+                            <input class="btn btn-outline-secondary" type="reset" value="CANCEL">
+                            <input class="btn btn-outline-secondary" type="remove" value="DELETE PROFILE">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

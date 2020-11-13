@@ -1,0 +1,29 @@
+body {
+    background: rgb(26, 25, 25);
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: small;
+
+    padding-top: 100px;
+    padding-left: 300px;
+    padding-right: 400px;
+
+}
+
+h6{
+    font-size: x-small;
+}
+
+.nav item{
+    font-size:small ;
+}
+
