@@ -1,0 +1,53 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: black;
+    margin: 0;
+    padding-bottom: 5px;
+
+}
+
+.row.header {
+    border-bottom: 1px solid #d9dadc;
+    padding: 25px 0 10px;
+    text-align: center;
+}
+
+
+.header .spotify-logo {
+    background-image: url("/01_Netflix_Logo/01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    max-width: 100%;
+    width: 200px;
+    object-fit: cover;
+    height: 66.66px;
+}
+
+label.control-label {
+    margin-top: 10px;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+.login-body{
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+#login-button {
+background-color: gray;
+color: #ffffff;
+}
+
+.btn-standard {
+    background-color: gray;
+}
