@@ -1,21 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <title>NetFlix</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="netflix.css" />
-  </head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="netflix.css">
+</head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark ">
      
@@ -44,7 +38,7 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
+              >Home</a
             >
           </li>
           <li class="nav-item">
@@ -92,11 +86,35 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid">
-      <div class="row" >
-      </div>
-      <div class="row" id="movieCltn">
-    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6 offset-md-3">
+                <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name"> <h4>Movie Title</h4> </label>
+                    <input type="text" class="form-control" id="name" placeholder="Type the title of the movie">
+                </div>
+
+                <div class="form-group">
+                    <label for="description"><h4>Description</h4></label>
+                    <textarea class="form-group" id="description" rows="3" placeholder="Description of the movie" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="category"><h4>Category</h4> </label>
+                    <input type="text" class="form-control" id="category" placeholder="Category">
+                </div>
+                <div class="form-group">
+                    <label for="imageUrl"><h4>Image URL</h4> </label>
+                    <input type="text" class="form-control" id="imageUrl" placeholder="URL of the image">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit" value="Submit product">Submit</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+      
     </div>
 
 <footer>
@@ -159,6 +177,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="backoffice.js"></script>
   </body>
 </html>

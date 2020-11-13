@@ -1,15 +1,15 @@
 window.onload = async () => {
-    const url = "https://striveschool-api.herokuapp.com/api/movies/"
-    let movieCltn = document.getElementById("movieCltn");
+    const url = "https://striveschool-api.herokuapp.com/api/movies/";
+    let movieCltn = document.querySelector("#movieCltn");
 
     try {
-        let response = await fetch("https://striveschool-api.herokuapp.com/api/product/", {
-            headers: {
+        let response = await fetch("https://striveschool-api.herokuapp.com/api/movies/", {
+            "headers": {
                 "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmFiZTc1NDRiY2RlMTAwMTc2MTZhYmQiLCJpYXQiOjE2MDUyNzE2MjIsImV4cCI6MTYwNjQ4MTIyMn0.mNuhnpw03feWefdCJaiiUXCi4LnRr8BtN_B5mV-Bf8s"
             }
         });
         let movieInfo = await response.json();
-
+        console.log(movieInfo)
         if (movieInfo.length > 0) {
             movieInfo.forEach((m) => {
                 let column = document.createElement("div");
@@ -31,6 +31,5 @@ window.onload = async () => {
         }
     } catch (error) {
         alert(error);
-        console.log(error);
     }
 };
